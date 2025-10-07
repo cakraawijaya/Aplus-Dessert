@@ -38,7 +38,6 @@ h1 {
 
 h2 {
   color: rgb(0, 0, 0);
-  padding-top: 20px;
 }
 
 .text-muted {
@@ -213,6 +212,12 @@ main {
   min-height: 350px;
 }
 
+.article-3 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .slide-wrapper, .indicator-wrap {
   display: flex;
   justify-content: center;
@@ -312,54 +317,16 @@ main {
   margin-top: 20px;
 }
 
-ol {
+.description > span > ol {
   padding: 0px 30px;
 }
 
-.form-footer {
+figure {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
   margin: 0 auto;
-}
-
-.input-email {
-  padding: 15px;
-  border: none;
-  border: solid 1px #ccc;
-  border-radius: 10px;
-  width: 335px;	
-  margin: 15px 5px 5px 15px;
-}
-
-.btn {
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  text-align: center;
-  border-radius: 25px;
-  margin: 15px 5px;
-}
-
-.submit-button {
-  padding: 12px;
-  border: none;
-  border: solid 1px #ccc;
-  border-radius: 10px;
-  background-color: #ff7800;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  margin-left: 10px;
-  width: 80px;	
-  margin: 15px 5px 5px 15px;
-}
-
-.submit-button:hover {
-  border: none;
-  border: solid 1px #ccc;
-  background-color: #ffc000;
+  margin-top: 28px;
 }
 
 .myPhoto {
@@ -367,51 +334,146 @@ ol {
   border-radius: 10px;
 }
 
+.creator {
+  margin: 28px 0;
+  padding: 0 10px;
+}
+
+.creator-name, .course, .case-study {
+	text-align: left;
+  word-wrap: break-word;
+  margin-bottom: 8px;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 300px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
+
+.article-3 > h3 {
+  margin-top: 28px;
+  word-wrap: break-word;
+}
+
+.article-3 > p {
+  margin-top: 20px;
+  word-wrap: break-word;
+}
+
+.form-footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-email {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 350px;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #ff7800;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ffc000;
+}
+
+.contactAddress {
+  padding: 0 10px;
+  margin: 28px 0;
+}
+
+.contact-info {
+  padding: 0 10px;
+  margin: 20px 0;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.myEmail, .myWhatsapp, .myInstagram, .myAddress {
+	text-align: left;
+  word-wrap: break-word;
+  margin-bottom: 8px;
+}
+
 .sosmed {
   text-align: center;
-  margin: 10px 0;
-  margin: 0 auto;
+  margin: 25px 0;
 }
 
-.logoig, .logowa, .logocod {
-  height: 50px;
-  width: 50px;
-  border-color: white;
-  border-radius: 20px;
-  border-style: inset;
-  margin-bottom: -5px;
+.btn {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logoig {
+.btn img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover img {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  border: 3px solid #ffd700;
+}
+
+.btn.ig img {
   background-color: #ff2aac;
 }
 
-.logowa {
+.btn.wa img {
   background-color: #239b76;
 }
 
-.logocod {
+.btn.cod img {
   background-color: #ff2a2a;
-}
-
-.logoig:hover, .logowa:hover, .logocod:hover {
-	opacity: 1;
-	border-radius: 25px;
-	height: 52px;
-	width: 52px;
-	border: solid 5px yellow;
-	border-radius: 20px;
-	border-style: outset;
-	position: relative;
-	width: 55px;
-	height: 55px;
-	margin: 0 auto;
-}
-
-.myIdentity{
-	text-align:justify;
-	padding-left:20px;
-	padding-right:20px;
 }
 
 footer {
