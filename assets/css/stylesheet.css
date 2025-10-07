@@ -54,7 +54,7 @@ h2 {
   border-radius: 5px;
 }
 
-.aplus-dessert-logo {
+.aplus-dessert-icon {
   margin: 0 auto;
   width: 200px;
   height: 200px;
@@ -100,7 +100,7 @@ h2 {
 .col-1 {
   display: flex;
   flex-direction: column;
-  flex: 0 0 30%;
+  flex: 1 1 30%;
   gap: 25px;
   min-width: 300px;
 }
@@ -108,7 +108,7 @@ h2 {
 .col-2 {
   display: flex;
   flex-direction: column;
-  flex: 0 0 65%;
+  flex: 1 1 67%;
   gap: 25px;
   min-width: 300px;
 }
@@ -191,6 +191,7 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 25px;
+  gap: 25px;
 }
 
 .article-1, .article-2, .article-3, .article-4 {
@@ -206,11 +207,11 @@ main {
   flex: 1;
 }
 
-.article-1, .article-3 {
+.article-1, .article-2 {
   min-height: 550px;
 }
 
-.article-2, .article-4 {
+.article-3, .article-4 {
   min-height: 350px;
 }
 
@@ -268,6 +269,10 @@ main {
   color: #ffeb3b;
 }
 
+.arrow {
+  margin: 0 5px;  
+}
+
 .promo {
   background-color: #e53935;
   color: #fff;
@@ -280,7 +285,7 @@ main {
 .slide-indicator {
   height: 12px;
   width: 12px;
-  margin: 18px 5px;
+  margin: 18px 5px 40px 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -309,6 +314,7 @@ main {
 
 .description {
   line-height: 2;
+  margin-top: 20px;
 }
 
 .description > p {
@@ -398,7 +404,7 @@ figure {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  width: 350px;
+  width: 60%;
   max-width: 100%;
   font-size: 16px;
   line-height: 1.4;
@@ -420,14 +426,12 @@ figure {
   background-color: #ffc000;
 }
 
-.contactAddress {
+.contactAddress, .contact-info {
   padding: 0 10px;
-  margin: 28px 0;
+  margin: 20px 0;
 }
 
 .contact-info {
-  padding: 0 10px;
-  margin: 20px 0;
   text-align: justify;
   word-wrap: break-word;
 }
@@ -517,4 +521,203 @@ footer {
 
 .scrollup:hover {
   border: solid 2px black;
+}
+
+@media screen and (max-width: 1024px) {
+  .col-1 {
+    flex: 1 1 25%;
+  }
+
+  .col-2 {
+    flex: 1 1 50%;
+  }
+
+  .header-wrap > p {
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+
+  .article-1, .article-2, .article-3, .article-4 {
+    padding: 20px;
+  }
+
+  .text-slide > span {
+    font-size: 10px;
+  }
+
+  .product-name {
+    margin-right: 6px;
+  }
+
+  .arrow {
+    margin: 0 4px;  
+  }
+
+  .promo {
+    margin-left: 6px;
+  }
+
+  .myPhoto {
+    height: 60%;
+    width: 60%;
+  }
+
+  .input-email {
+    width: 60%;
+  }
+
+  .myEmail, .myWhatsapp, .myInstagram, .myAddress {
+    overflow-wrap: break-word;
+    white-space: pre-line;
+  }
+
+  .btn > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .header-wrap {
+    font-size: 16px;
+    padding: 15px 10px;
+  }
+
+  .header-wrap > h1 {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .header-wrap > img.aplus-dessert-icon {
+    width: 120px;
+    height: auto;
+    margin: 0;
+  }
+
+  .header-wrap > p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    padding: 12px;
+    line-height: 1.7;
+  }
+
+  .navbar {    
+    padding-top: 15px;
+  }
+
+  .navbar > ul > li > a {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar > p {    
+    gap: 15px;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  .col, .col-1, .col-2 {
+    flex: 1 1 100%;
+  }
+
+  .navbar-icons, .article-icons {
+    height: 20px;
+    width: 16px;
+  }
+
+  .article-1, .article-2, .article-3, .article-4 {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .text-slide > span {
+    font-size: 8px;
+  }
+
+  .product-name {
+    margin-right: 4px;
+  }
+
+  .arrow {
+    margin: 0 2px;  
+  }
+
+  .promo {
+    margin-left: 4px;
+  }
+
+  .description > p {
+    font-size: 12px;
+  }
+
+  .motto, .open {
+    font-size: 15px;
+  }
+
+  .description > span > ol {
+    font-size: 12px;
+    padding: 0 25px;
+  }
+
+  .creator {
+    margin-top: 10px 0;
+  }
+
+  .myPhoto {
+    height: 45%;
+    width: 45%;
+  }
+
+  .creator-name, .course, .case-study {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .input-email {
+    width: 57%;
+  }
+
+  .input-email {
+    padding: 10px;
+    line-height: 1;
+  }
+
+  .submit-button {
+    padding: 7px 10px;
+  }
+
+  .article-3 > h3 {
+    padding-top: 10px;
+    font-size: 15px;
+  } 
+  
+  .article-3 > p, .input-email, .submit-button {
+    font-size: 12px;
+  }
+
+  .contactAddress, .contact-info {
+    margin: 15px 0;
+    font-size: 12px;
+  }
+
+  .btn {
+    margin: 0 5px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
 }
