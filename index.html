@@ -271,6 +271,21 @@
 			</div>
 		</footer>
 
+		<script>
+			window.addEventListener('DOMContentLoaded', () => {
+				const navbar = document.querySelector('.navbar');
+				const header = document.querySelector('.header-wrap');
+				const stickyOffset = header.offsetHeight;
+
+				window.addEventListener('scroll', () => {
+				if (window.pageYOffset >= stickyOffset) {
+					navbar.classList.add('sticky');
+				} else {
+					navbar.classList.remove('sticky');
+				}
+				});
+			});
+		</script>
 		<script src="assets/js/unggulan.js"></script>
 		<script src="assets/js/currentYear.js"></script>
 		<script src="assets/js/scrollup.js"></script>
