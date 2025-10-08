@@ -53,20 +53,13 @@ Learn Basic Web Programming.
 ## Highlights
 <table>
 <tr>
-<th width="420">Website Header Section</th>
-<th width="420">Website Footer Section</th>
+<th width="840">Aplus Dessert Display</th>
 </tr>
 <tr>
-<td><img src="assets/documentation/Website Header Section.jpg" alt="header"></td>
-<td><img src="assets/documentation/Website Footer Section.jpg" alt="footer"></td>
-</tr>
-</table>
-<table>
-<tr>
-<th width="840">Website Body Section</th>
+<td align="center"><img src="assets/documentation/Aplus_Dessert_1.jpg" alt="desktop"></td>
 </tr>
 <tr>
-<td><img src="assets/documentation/Website Body Section.jpg" alt="body"></td>
+<td align="center"><img src="assets/documentation/Aplus_Dessert_2.jpg" alt="mobile"></td>
 </tr>
 </table>
 
