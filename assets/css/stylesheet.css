@@ -69,8 +69,8 @@ h2 {
 }
 
 .article-icons {
-  height: 30px;
-  width: 30px;
+  height: 23px;
+  width: 23px;
   padding-top: 4px;
 }
 
@@ -313,7 +313,7 @@ main {
 }
 
 .description {
-  line-height: 2;
+  line-height: 1.5;
   margin-top: 20px;
 }
 
@@ -326,7 +326,13 @@ main {
 }
 
 .description > span > ol {
-  padding: 0px 30px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+ol > li > p {
+  text-align: left;
+  line-height: 1.7;
 }
 
 figure {
@@ -379,13 +385,14 @@ figure {
 }
 
 .article-3 > h3 {
-  margin-top: 28px;
+  margin-top: 43px;
   word-wrap: break-word;
 }
 
 .article-3 > p {
   margin-top: 20px;
   word-wrap: break-word;
+  line-height: 1.5;
 }
 
 .form-footer {
@@ -434,12 +441,14 @@ figure {
 .contact-info {
   text-align: justify;
   word-wrap: break-word;
+  line-height: 1.5;
 }
 
 .myEmail, .myWhatsapp, .myInstagram, .myAddress {
 	text-align: left;
-  word-wrap: break-word;
   margin-bottom: 8px;
+  white-space: pre-line;
+  line-height: 1.5;
 }
 
 .sosmed {
@@ -489,7 +498,7 @@ footer {
   color: white;
   background: linear-gradient(-45deg, rgba(255, 94, 0, 0.6), rgba(170, 0, 0, 0.8));
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .footer-container {
@@ -524,12 +533,21 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 20px;
+  }
+
   .col-1 {
     flex: 1 1 25%;
   }
 
   .col-2 {
     flex: 1 1 50%;
+  }
+
+  .article-icons {
+    height: 20px;
+    width: 16px;
   }
 
   .header-wrap > p {
@@ -542,19 +560,19 @@ footer {
   }
 
   .text-slide > span {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .product-name {
-    margin-right: 6px;
+    margin-right: 4px;
   }
 
   .arrow {
-    margin: 0 4px;  
+    margin: 0 2px;  
   }
 
   .promo {
-    margin-left: 6px;
+    margin-left: 4px;
   }
 
   .myPhoto {
@@ -647,6 +665,12 @@ footer {
     font-size: 8px;
   }
 
+  .slide-indicator {
+    height: 8px;
+    width: 8px;
+    margin: 18px 5px 30px 5px;
+  }
+
   .product-name {
     margin-right: 4px;
   }
@@ -661,6 +685,7 @@ footer {
 
   .description > p {
     font-size: 12px;
+    line-height: 2;
   }
 
   .motto, .open {
@@ -669,7 +694,11 @@ footer {
 
   .description > span > ol {
     font-size: 12px;
-    padding: 0 25px;
+    padding-left: 25px;
+  }
+
+  ol > li > p {
+    line-height: 2;
   }
 
   .creator {
@@ -714,7 +743,7 @@ footer {
   }
 
   .btn {
-    margin: 0 5px;
+    margin: 0 8px;
   }
 
   footer {
