@@ -583,6 +583,15 @@ footer {
     margin-left: 4px;
   }
 
+  .description > p {
+    line-height: 1.8;
+  }
+
+  .description .motto, .description .open {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
   .myPhoto {
     height: 60%;
     width: 60%;
@@ -696,8 +705,9 @@ footer {
     line-height: 2;
   }
 
-  .motto, .open {
-    font-size: 15px;
+  .description .motto, .description .open {
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .description > span > ol {
